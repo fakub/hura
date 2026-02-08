@@ -24,3 +24,7 @@ enableEmoji = true
 
     # Options used for automatic image generation. see: https://gohugo.io/content-management/image-processing/
     image_options = "webp q90 lanczos photo"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
