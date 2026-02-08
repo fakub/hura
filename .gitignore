@@ -1,0 +1,8 @@
+# The folder where Hugo generates the final website
+/public/
+
+# Temporary resources (Sass cache, resized images, etc.)
+/resources/
+
+# Hugo's internal build cache
+/.hugo_build.lock

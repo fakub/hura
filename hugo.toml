@@ -1,4 +1,26 @@
 baseURL = 'https://klemurkovi.github.io/'
 languageCode = 'cs-CZ'
+defaultContentLanguage = 'cs'
 title = 'Svatba Klemůrkovi'
 theme = 'hugo-scroll'
+
+# This is a "one page"-website, so we do not need these kinds of pages...
+disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
+
+# enable emoji processing in Markdown (valid only for pure markdown content)
+enableEmoji = true
+
+# Theme-specific variables `.Site.Params.myParamName`
+[params]
+
+    favicon = "images/favicon.png"
+
+    # When set true, it creates a visual guard (partially transparent rounded box),
+    # preventing non-ideal background images from interfering with title/description headings
+    title_guard = false
+
+    # The sections of the home page alternate styling. Mark invert as true to swap the styling of the sections
+    invertSectionColors = true
+
+    # Options used for automatic image generation. see: https://gohugo.io/content-management/image-processing/
+    image_options = "webp q90 lanczos photo"
