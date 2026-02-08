@@ -1,0 +1,4 @@
+baseURL = 'https://klemurkovi.github.io/'
+languageCode = 'cs-CZ'
+title = 'Svatba Klemůrkovi'
+theme = 'hugo-scroll'
