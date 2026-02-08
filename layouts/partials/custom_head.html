@@ -1,0 +1,71 @@
+<!-- A partial to be overwritten by the user.
+     Its content will appear before the closing </head>-tag -->
+
+
+<!-- Custom CSS via inline styles
+     You may use this template to add custom CSS to your site like so: -->
+<style>
+:root {
+    /* check out https://htmlcolorcodes.com/ */
+    --kremova: #f2efe8;
+    --tm-seda: #3a4145;
+    --barva:   #e65440;
+    --nadpis:  var(--kremova);
+
+    /* === Cover / Landing area === */
+    --cover-text-color: var(--nadpis);
+    /* Used for Landing screen menu buttons, but potentially usable for highlighting other things */
+    --highlight: var(--barva);
+    --highlight-contrast: var(--cover-text-color);
+    /*inverse colors used for :hover */
+    --highlight-inverse: var(--cover-text-color);
+    --highlight-inverse-contrast: var(--barva);
+
+    /* visual guard around title and description, when the feature is enabled */
+    --cover-title-and-description-guard-bg-color: rgba(255, 255, 255, 0.6);
+    --cover-title-text-shadow: var(--kremova) 0px 0px 17px;
+
+
+    /* === sticky top/left navigation menus === */
+    --sticky-menu-text-color: var(--barva);
+
+
+    /* === Alternating content (post) sections  === */
+    /* Light section */
+    --section-light-text-color: var(--tm-seda);
+    --section-light-bg-color: var(--kremova);
+
+    /* Dark section */
+    --section-dark-text-color: var(--kremova);
+    --section-dark-bg-color: var(--barva);
+
+    /* Light&Dark section >quote. Suppressive color, compared to 'Light section - text color'*/
+    --section-uni-quote: var(--tm-seda);
+    /* Light&Dark section `code` a bit darker than 'Light section - background color' */
+    --section-uni-code-bg-color: var(--kremova);
+
+    /* === Footer === */
+    --footer-color-background: var(--tm-seda);
+    --footer-color: #22343a;
+
+    /* === Lists === */
+    /* define list element for unnumbered lists, leave empty for default list element */
+    /* --ul-li-icon: fa-asterisk; */
+}
+</style>
+
+<!-- Custom CSS via "custom.css"-file
+     If you would rather place your custom CSS into
+     a separate file, create a "custom.css" in your
+     local "static/css"-directory. Then add a <link>-tag
+     referencing your "custom.css" like so: -->
+
+<!-- <link rel="stylesheet" href='{{ "css/custom.css" | absURL }}'> -->
+
+<!-- Custom CSS: Color Codes
+     You may checkout https://htmlcolorcodes.com/ to get those
+     weird color codes (like "#22343A") ;-). -->
+
+<!-- Custom link-tags for different icons
+     Generated via https://favicon.io/favicon-generator/ -->
+
