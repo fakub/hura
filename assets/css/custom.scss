@@ -1,0 +1,36 @@
+// Apply to the whole site
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+// Apply specifically to headings
+h1, h2, h3, .site-title {
+    font-family: 'Amita', serif;
+}
+
+// Target the main wedding title in the header
+#site-head-content .blog-title {
+    font-family: 'Amita', serif !important;
+    // font-weight: 700;
+    font-size: 120pt !important;
+}
+
+// Target the description/date text below the title
+#site-head-content .blog-description {
+    font-family: 'Nunito', sans-serif !important;
+    // font-weight: 400;
+    font-size: 40pt !important;
+}
+
+// Target the description/date text below the title
+#site-head-content .site-menu {
+    font-family: 'Nunito', sans-serif !important;
+    // font-weight: 400;
+    // font-size: 40pt !important;
+}
+
+// If you have a "scroll down" button/link in the header
+.fixed-nav {
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 400;
+}

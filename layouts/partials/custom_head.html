@@ -1,55 +1,62 @@
 <!-- A partial to be overwritten by the user.
      Its content will appear before the closing </head>-tag -->
 
+<!--
+    Custom fonts
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+{{ $style := resources.Get "css/custom.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
 <!-- Custom CSS via inline styles
      You may use this template to add custom CSS to your site like so: -->
-<!--
-    kremova: f2efe8 eee899 -> f0ebc0   | a0bf52
--->
 <style>
 :root {
-    /* check out https://htmlcolorcodes.com/ */
-    --kremova: #f2f0ea;
-    --tm-seda: #3a4145;
-    --barva:   #d0f0a0;
-    --tm-barva:#7a8d5e;
-    --nadpis:  var(--tm-seda);
+    /* check out https://coolors.co/ namely https://coolors.co/646f57-e9edc9-fefae0-7a925a-faedcd */
+    --tmava-pozadi:     #E9EDC9;
+    --tmava-pismo:      #646F57; /* avg of 697268 606C47 */
+    --svetla-pozadi:    #FEFAE0;
+    --svetla-pismo:     #7a925a;
+    --nadpis:  var(--tmava-pismo);
 
     /* === Cover / Landing area === */
     --cover-text-color: var(--nadpis);
     /* Used for Landing screen menu buttons, but potentially usable for highlighting other things */
-    --highlight: var(--barva);
+    --highlight: var(--tmava-pozadi);
     --highlight-contrast: var(--cover-text-color);
     /*inverse colors used for :hover */
     --highlight-inverse: var(--cover-text-color);
-    --highlight-inverse-contrast: var(--barva);
+    --highlight-inverse-contrast: var(--tmava-pozadi);
 
     /* visual guard around title and description, when the feature is enabled */
     --cover-title-and-description-guard-bg-color: rgba(255, 255, 255, 0.6);
-    --cover-title-text-shadow: var(--kremova) 0px 0px 17px;
+    --cover-title-text-shadow: var(--tmava-pozadi) 0px 0px 17px;
 
 
     /* === sticky top/left navigation menus === */
-    --sticky-menu-text-color: var(--barva);
+    --sticky-menu-text-color: var(--tmava-pismo);
 
 
     /* === Alternating content (post) sections  === */
     /* Light section */
-    --section-light-text-color: var(--tm-barva);
-    --section-light-bg-color: var(--kremova);
+    --section-light-text-color: var(--svetla-pismo);
+    --section-light-bg-color: var(--svetla-pozadi);
 
     /* Dark section */
-    --section-dark-text-color: var(--tm-seda);
-    --section-dark-bg-color: var(--barva);
+    --section-dark-text-color: var(--tmava-pismo);
+    --section-dark-bg-color: var(--tmava-pozadi);
 
     /* Light&Dark section >quote. Suppressive color, compared to 'Light section - text color'*/
-    --section-uni-quote: var(--tm-seda);
+    --section-uni-quote: var(--tmava-pismo);
     /* Light&Dark section `code` a bit darker than 'Light section - background color' */
-    --section-uni-code-bg-color: var(--kremova);
+    --section-uni-code-bg-color: var(--svetla-pozadi);
 
     /* === Footer === */
-    --footer-color-background: var(--tm-seda);
+    --footer-color-background: var(--tmava-pismo);
     --footer-color: #22343a;
 
     /* === Lists === */
