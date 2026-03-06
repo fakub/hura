@@ -9,5 +9,5 @@ header_logo: "images/header-logo.png"
 
 # Headers are safeHTML, you can use HTML tags such as b,i,u,br
 header_headline: "Klemůrkovi"
-header_subheadline: "<b>Hurá!</b> Budeme se <b>brát!</b>"
+# header_subheadline: "<b>Hurá!</b> Budeme se <b>brát!</b>"
 ---
