@@ -22,4 +22,3 @@ header_menu: true
   > Jaká by to svatba byla, kdyby se šifra neluštila?
   * příležitost ještě bude, a tak prozradíme, že [popejemomo](https://mapy.com/s/popejemomo)
   * z Prahy to vidět neni, neb ve výhledu překáží Velký Blaník
-  * pro milovníky mapích zkratek jedna pikantní: [já zasunu, ne?](https://mapy.com/s/jazasunune)
