@@ -3,7 +3,8 @@ title: "Program"
 weight: 4
 header_menu: true
 ---
-Víc programu sem dáme, až budem mít program 😹
+
+Víc programu sem dáme, až budem mít program :joy_cat:
 * 10:00 - Poznejte lépe novomanžele
 * 13:00 - Obřad
 * 14:00 - Hostina
